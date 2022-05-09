@@ -1,0 +1,14 @@
+@item-size: 20px;
+
+.item {
+    width: @item-size;
+    height: @item-size;
+    span {
+        background: red;
+    }
+}
+
+.sub-item {
+    .item;
+    background-color: blue;
+}

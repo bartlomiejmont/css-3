@@ -1,0 +1,89 @@
+.item {
+    width: 40px;
+    height: 40px;
+}
+
+#d1 {
+    background: #000;
+    grid-area: d1;
+}
+#d2 {
+    background: rgb(255, 70, 70);
+    grid-area: d2;
+}
+#d3 {
+    background: rgb(61, 160, 82);
+    grid-area: d3;
+    transform: scale(2);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 75px;
+
+}
+#d4 {
+    background: rgb(101, 19, 107);
+    grid-area: d4;
+
+}
+#d5 {
+    background: rgb(199, 211, 60);
+    grid-area: d5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-template-areas: 
+    ". . . . d1" 
+    ". . . d2 ."
+    ". . d3 . ."
+    ". d4 . . ."
+    "d5 . . . .";
+    place-items: center;
+}
+
+
+
+
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    /* grid-template-rows: repeat(3, 50px); */
+}
+
+#s1 {
+    place-self: start;
+}
+
+#s2 {
+    place-self: start center;
+}
+
+#s3 {
+    place-self: start end;
+}
+
+#s4 {
+    place-self: center start;
+}
+
+#s5 {
+    place-self: center;
+}
+
+#s6 {
+    place-self: center end;
+}
+
+#s7 {
+    place-self: end start;
+}
+
+#s8 {
+    place-self: end center;
+}
+
+#s9 {
+    place-self: end;
+}
